@@ -1,0 +1,7 @@
+print("{:-^35}".format('Exercício 27'))
+nome = str(input('Digite seu nome completo: '))
+print('{:-^35}'.format(''))
+nome = nome.split()
+print("Primeiro nome: {}".format(nome[0]))
+print("Último nome: {}".format(nome[len(nome)-1]))
+print('{:-^35}'.format(''))

@@ -4,8 +4,8 @@ print('{:-^50}'.format('Exercício 45'))
 print('\n{:^50}'.format('Vamos jogar Jokenpô?'))
 # Legenda
 print('\n{:-^25}'.format('Legenda'))
-print('Pedra [1]')
-print('Papel [2]')
+print('Pedra   [1]')
+print('Papel   [2]')
 print('Tesoura [3]')
 print('{:-^25}'.format(''))
 # Fim legenda

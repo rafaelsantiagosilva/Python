@@ -1,7 +1,9 @@
 from random import randint
 print('{:-^50}'.format('Exercício 45'))
+
 # Titulo
 print('\n{:^50}'.format('Vamos jogar Jokenpô?'))
+
 # Legenda
 print('\n{:-^25}'.format('Legenda'))
 print('Pedra   [1]')
@@ -9,10 +11,13 @@ print('Papel   [2]')
 print('Tesoura [3]')
 print('{:-^25}'.format(''))
 # Fim legenda
+
 opc_user = int(input('Digite uma das opções acima: '))
 if str(opc_user) in '1 2 3':
+    
     # Escolhendo opção do computador
     opc_npc = randint(1, 3)
+    
     # Verificando vitória...
     if opc_user == 1 and opc_npc == 3:
         condicao = 'VITÓRIA'
@@ -24,6 +29,7 @@ if str(opc_user) in '1 2 3':
         condicao = 'DERROTA'
     else:
         condicao = 'EMPATE'
+        
     # Verificando movimento do usuário
     if opc_user == 1:
         opc_user = 'Pedra'
@@ -46,6 +52,7 @@ if str(opc_user) in '1 2 3':
     print('{:^25}{:^25}'.format('Você', 'Computador'))
     print('{:^25}{:^25}'.format(opc_user, opc_npc))
     print('{:=^50}'.format(''))
+    
 # Opção inválida
 else:
     print('Eiii, só pode digitar uma daquelas opções :(')

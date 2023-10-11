@@ -1,19 +1,11 @@
-import sys
-print('{:-^50}'.format('Exercício 52'))
-n = int(input('Digite um número: '))
-div = 0
-print('{:=^50}'.format('DIVISORES'))
-for i in range(1, n+1):
-    if n % i == 0:
-        div+=1
-        print('\033[1;34m', end="")
-        if div > 2:
-            resp = 'NÃO É PRIMO!'
-        else:
-            resp = 'É PRIMO!'
-    else:
-        div+=0
-        print('\033[0;37m', end="")
-    sys.stdout.write('{} '.format(i, end=""))
-print('\n{}{:=^50}'.format('\033[m', ''))
-print('O número {} {}'.format(n, resp))
+print('{:-^50}'.format('Exercício 53'))
+frase = str(input('Digite uma frase: \n')).strip().upper()
+frase = frase.split()
+frase_junta = ''.join(frase)
+frase_contraria = ''
+for i in range(len(frase_junta)-1, -1, -1):
+    frase_contraria+=frase_junta[i]
+if frase_junta == frase_contraria:
+    print('É um palíndromo')
+else:
+    print('Não é um palíndromo')

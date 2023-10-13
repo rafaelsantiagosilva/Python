@@ -2,7 +2,7 @@
 from random import randint
 
 # Título do programa
-print(f'{"Exercício 67":-^50}')
+print(f'{"Exercício 68":-^50}')
 
 # Título do jogo
 print('\n{:=^40}\n{:^40}\n{:=^40}'.format('', 'IMPAR OU PAR', ''))

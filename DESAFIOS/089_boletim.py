@@ -3,6 +3,7 @@ print(f'{'Exercício 89':-^50}\n')
 aluno = list()
 opc = 0
 alunos = list()
+
 # Entrada
 qtd_alunos = int(input('Gostaria de armazenar a nota de quantos alunos?\nR:'))
 print(f'\n{'-':-^45}')
@@ -18,7 +19,6 @@ for i in range(0, qtd_alunos):
      aluno.clear()
 print(f'{'B O L E T I M':=^45}')
 
-
 # Processamento
 print(f'Nome{'Nº':^22}{'Média':^44}\n{'=':=^65}')
 for i in range(0, len(alunos)):
@@ -28,5 +28,5 @@ print(f'{"=":=^65}')
 # Saída
 while opc != 999:
      opc = int(input("\nDeseja ver as notas de qual aluno? [999 = parar]\nR:"))
-     if opc != 999:
+     if opc != 999 and opc <= len(alunos) and opc >= 1:
           print(f"\n{alunos[opc-1][0]}: {alunos[opc-1][3]}")

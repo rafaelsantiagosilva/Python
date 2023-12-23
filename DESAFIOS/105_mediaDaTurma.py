@@ -42,4 +42,4 @@ ler_notas(6.5, 10, 9, 8, 7, 2, situacao=True)
 print('\n')
 ler_notas(10, 10, 10, 10, situacao=True)
 
-help(ler_notas)
+# help(ler_notas)

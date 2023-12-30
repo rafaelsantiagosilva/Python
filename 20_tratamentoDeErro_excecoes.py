@@ -18,11 +18,12 @@ except Exception as error: # ..mas se ocorrer um problema
      print(f'Infelizmente tivemos um problema de {error.__class__}! D:')
 else: #...senão ocorrer problema
      print('O resultado é de ' + resultado)
-     
+
 finally: #...por fim, com ou sem problema...
      print('Volte sempre! :D')
 
 '''
+
 Temos alguns erros/exceções como:
 -> NameError: 
      Erro de nome, de variável com nome errado
@@ -41,4 +42,5 @@ Temos alguns erros/exceções como:
 
 -> ModuleNotFindError: 
      Erro de módulo não encontrado
+
 '''

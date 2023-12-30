@@ -2,6 +2,10 @@ import modEX109
 from modEX108 import moeda
 
 def resumo(valor, porcentagemA, porcentagemD): 
+     '''
+     Apresenta um resumo usando as funções dos módulos
+     desenvolvidos nos outros exercícios
+     '''
      print(f'{"=":=^50}\n{"RESUMO DO VALOR":^50}\n{"=":=^50}')
      print("Preço analisado: " + moeda(num=valor))
      print("Dobro do preço: " + modEX109.dobro(num=valor, format=True))

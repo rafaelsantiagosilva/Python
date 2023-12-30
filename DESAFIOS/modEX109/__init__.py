@@ -17,20 +17,20 @@ def dobro(num, format=False):
      else:
           return num*2
 
-def aumentar(num, format=False):
+def aumentar(num, format=False, porcentagem=10):
      '''
      Calcula o numero + 10% dele mesmo
      '''
      if format:
-          return modEX108.moeda(num+(num/100*10))
+          return modEX108.moeda(num+(num/100*porcentagem))
      else: 
-          return num+(num/100*10)
+          return num+(num/100*porcentagem)
 
-def diminuir(num, format=False):
+def diminuir(num, format=False, porcentagem=10):
      '''
      Calcula o numero - 10% dele mesmo
      '''
      if format:
-          return modEX108.moeda(num-(num/100*10))
+          return modEX108.moeda(num-(num/100*porcentagem))
      else:
-          return num-(num/100*10)
+          return num-(num/100*porcentagem)

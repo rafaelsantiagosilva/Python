@@ -1,0 +1,2 @@
+# Exercício 115
+Este exercício em questão não houve a tentativa de ser realizado, por requerer alguns conceitos de manipulação de arquivos em Python 3. Por isso, o código é uma cópia do projeto criado no curso em vídeo
